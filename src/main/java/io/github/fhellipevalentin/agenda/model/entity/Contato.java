@@ -19,13 +19,13 @@ public class Contato {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column
+	@Column(length = 150, nullable = false)
 	private String nome;
 	
 	@Column
 	private String email;
-	
-	@Column
+
+	@Column(nullable = false)
 	private boolean favorito;
 	
 }
